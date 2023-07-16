@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+		<link id="theme" rel="stylesheet" href="css/main.css" />
+		<title>My first Website</title>
+	</head>
+
+	<body>
+		<!-- todas as imagens deste site são geradas pela plataforma https://dummyimage.com/-->
+		<header>
+			<!--navigation-->
+
+			<nav class="navbar">
+				<div class="container">
+					<div class="navbar__wrapper">
+						<div class="logo">
+							<h2>My Website</h2>
+						</div>
+
+						<button id="changeThemeBtn" class="btn">
+							<i class="fas fa-sun"></i>
+						</button>
+
+						<!-- avoid type="none" atribute because its obsolute -> better css -->
+						<ul class="navbar__menu">
+							<li>
+								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="#team">Team</a>
+							</li>
+							<li>
+								<a href="#services">Services</a>
+							</li>
+							<li>
+								<a href="#blog">Blog</a>
+							</li>
+						</ul>
+
+						<div class="navbar__hamburger">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- call to action on the page-->
+			<section id="hero" class="hero">
+				<div class="container">
+					<div class="hero__wrapper">
+						<div class="hero__content">
+							<h1>A Bootstrap 5 template for <br />modern businesses</h1>
+							<p>Quickly design and customize responsive mobile-first sites with <br />Bootstrap, the world’s most popular front-end open source toolkit!</p>
+
+							<a class="button cta-primary" href="#">Get Started</a>
+							<a class="button cta-secundary" href="#">Learn More</a>
+						</div>
+
+						<div class="hero__image" title="Eu sou uma imagem dummy gerada a partir do site https://dummyimage.com">
+							<img src="https://placekitten.com/640/400" alt="hero image" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About section -->
+			<section id="about" class="about">
+				<h2>Our mission is to make building <br />websites easier for everyone.</h2>
+				<p>
+					Start Bootstrap was built on the idea that quality, functional website <br />templates and themes should be available to everyone. Use our open source, <br />free products, or support us by
+					purchasing one of our <br />premium products or services.
+				</p>
+				<a class="button cta-primary" href="#">Read our story</a>
+
+				<div class="about__background">
+					<div class="container">
+						<div class="about__articles-wrapper">
+							<div class="about__article">
+								<!-- sem div para wrapper a tag nao fica img-fluid-->
+								<div class="about__container-img">
+									<img src="https://placekitten.com/640/400" alt="about image" />
+								</div>
+
+								<div class="about__content left">
+									<h3>Our founding</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate,
+										quibusdam expedita, maiores eaque quisquam.
+									</p>
+								</div>
+							</div>
+
+							<div class="about__article">
+								<div class="about__content right">
+									<h3>Growth & beyond</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate,
+										quibusdam expedita, maiores eaque quisquam.
+									</p>
+								</div>
+								<div class="about__container-img">
+									<img src="https://placekitten.com/640/400" alt="about image" class="reverse-order" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Team section -->
+			<section id="team" class="team">
+				<h2>Our team</h2>
+				<p>Dedicated to quality and your success</p>
+
+				<div class="container">
+					<div class="team__wrapper">
+						<div class="team__item">
+							<div class="team__item-wrapper">
+								<img src="https://placekitten.com/150/150" alt="Ibbie Eckart" />
+
+								<h3>Ibbie Eckart</h3>
+								<p>Founder & CEO</p>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__item-wrapper">
+								<img src="https://placekitten.com/150/150" alt="Arden Vasek" />
+								<h3>Arden Vasek</h3>
+								<p>CFO</p>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__item-wrapper">
+								<img src="https://placekitten.com/150/150" alt="Toribio Nerthus" />
+								<h3>Toribio Nerthus</h3>
+								<p>Operations Manager</p>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__item-wrapper">
+								<img src="https://placekitten.com/150/150" alt="Malvina Cillat" />
+								<h3>Malvina Cilla</h3>
+								<p>CTO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Services Section-->
+			<section id="services" class="services">
+				<div class="container">
+					<div class="services__wrapper">
+						<h2>A better way to start <br />building.</h2>
+
+						<div class="services__column">
+							<article class="services__item">
+								<div class="services__icon">
+									<i class="fa-solid fa-code"></i>
+								</div>
+								<h3>Featured title</h3>
+								<p>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+							</article>
+
+							<article class="services__item">
+								<div class="services__icon">
+									<i class="fa-solid fa-code-branch"></i>
+								</div>
+								<h3>Featured title</h3>
+								<p>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+							</article>
+						</div>
+
+						<div class="services__column">
+							<article class="services__item">
+								<div class="services__icon">
+									<i class="fa-solid fa-cubes"></i>
+								</div>
+								<h3>Featured title</h3>
+								<p>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+							</article>
+
+							<article class="services__item">
+								<div class="services__icon">
+									<i class="fa-solid fa-mug-saucer"></i>
+								</div>
+								<h3>Featured title</h3>
+								<p>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="testimonials" class="testimonials">
+				<div class="container">
+					<!-- using -->
+					<blockquote>
+						"Working with Start Bootstrap templates has saved me tons of
+						<br />development time when building new projects! Starting with a <br />Bootstrap template just makes things easier!"
+					</blockquote>
+					<div class="blockquote-author">
+						<img src="https://placekitten.com/40/40" alt="testimonial author" />
+						<p>Tom Ato<span>/</span>Ceo, Pomodoro</p>
+					</div>
+				</div>
+			</section>
+
+			<!--Blog Section-->
+			<section id="blog" class="blog">
+				<div class="container">
+					<h2>From our blog</h2>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit<br />
+						ratione dicta mollitia. Officiis ad.
+					</p>
+
+					<div class="blog__wrapper">
+						<!-- blog post 01-->
+						<div class="blog__card">
+							<article class="blog__card-wrapper">
+								<div class="blog__card-image">
+									<img src="https://placekitten.com/600/350" alt="blog image" />
+								</div>
+								<span>News</span>
+								<h3>Blog post title</h3>
+								<div class="blog__card-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, molestiae.</p>
+								</div>
+								<div class="blog__card-footer">
+									<img src="https://placekitten.com/40/40" alt="author image" />
+									<div class="blog__author">
+										<p>Kelly Rowan</p>
+										<p>March 12, 2022 - 6 min read</p>
+									</div>
+								</div>
+							</article>
+						</div>
+						<!-- blog post 02-->
+						<div class="blog__card">
+							<article class="blog__card-wrapper">
+								<div class="blog__card-image">
+									<img src="https://placekitten.com/600/350" alt="blog image" />
+								</div>
+
+								<span>News</span>
+								<h3>Blog post title</h3>
+								<div class="blog__card-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, molestiae.</p>
+								</div>
+								<div class="blog__card-footer">
+									<img src="https://placekitten.com/40/40" alt="author image" />
+									<div class="blog__author">
+										<p>Kelly Rowan</p>
+										<p>March 12, 2022 - 6 min read</p>
+									</div>
+								</div>
+							</article>
+						</div>
+						<!-- blog post 03-->
+						<div class="blog__card">
+							<article class="blog__card-wrapper">
+								<div class="blog__card-image">
+									<img src="https://placekitten.com/600/350" alt="blog image" />
+								</div>
+
+								<span>News</span>
+								<h3>Blog post title</h3>
+								<div class="blog__card-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, molestiae.</p>
+								</div>
+								<div class="blog__card-footer">
+									<img src="https://placekitten.com/40/40" alt="author image" />
+									<div class="blog__author">
+										<p>Kelly Rowan</p>
+										<p>March 12, 2022 - 6 min read</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<p>Copyright &#169; Your Website 2022</p>
+					<ul>
+						<li><a href="#" target="_blank">Privacy</a></li>
+						<li><a href="#" target="_blank">Terms</a></li>
+						<li><a href="#" target="_blank">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<button id="scroll-to-top">
+			<i class="fa-solid fa-arrow-up"></i>
+		</button>
+
+		<!-- scripts -->
+		<script src="https://kit.fontawesome.com/aaed04d9a4.js" crossorigin="anonymous"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
